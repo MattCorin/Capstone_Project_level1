@@ -1,0 +1,157 @@
+<!doctype html> 
+
+<html>
+
+<head>
+    <script src= "https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" ></script>
+    <script src= "../cricket.js"></script>
+
+    <link rel="stylesheet" href="../cricket_css/cricket_styling.css" type="text/css"> <!-- this is the line that links to the cricket_style.css file -->
+    <title>The Crickipedia</title>    
+
+    <!-- Required meta tags to use Bootstrap-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <!--First we create our header with the links to the different pages for the site-->
+    <div class="header">
+        <div class="inner_header">
+            <div class="logo-container">
+                <h1>the<span>CRICKIPEDIA</span></h1>
+            </div>
+
+            <ul class="navigation">
+                <a href="index.html"><li>Home</li></a>
+                <a href="#"><li>Batting</li></a>
+                <a href="Bowling.html"><li>Bowling</li></a>
+                <a href="Save-For-Later.html"><li>Saved Items</li></a>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <!--Block of green writing-->
+        <div class="alert alert-success text-center" role="alert">
+            <h4><u>Let's learn about BATTING!</u></h4>
+            <br>
+            <p>Batting is essentially the <b>point</b> of cricket! </p>
+            <p>Let me explain... The manner in which a cricket game is won is by scoring the most runs.
+                And how are runs scored? By BATTING!
+                Now, as you can see in the image below, runs are scored when a batsman hits the ball 
+                after the bowler bowls it to him in an attempt to get him out.
+            </p>
+            <p>As the image also shows, the batsman also wears a variety of protective equipment, 
+                including the following:</p>
+            <div class="container">
+                <ul>
+                    <li>Gloves</li>
+                    <li>Pads (legs)</li>
+                    <li>Helmet</li>
+                    <li>Thigh-pads (Inside the long white pants)</li>
+                </ul>
+            </div>
+            
+        </div>
+
+        <!--Inserting an image-->
+        <figure>
+            <img src="../Images/kallis.jpg" alt="Batting" width=50%>
+            <figcaption>An image of a batsman playing a cover drive</figcaption>
+        </figure>
+
+        <!--Block of text-->
+        <div class="container bg-primary text-center text-white">
+            <h5><u>Calling the Shots</u></h5>
+            
+                <p for="Info" id="Batting">Another small detail regarding batting is included in the caption of the image above. The batsman in the image is playing a "cover drive". 
+                This is one of the many different types of shots that can be played by the batsman. 
+                <br><br>These shots are usually dictated by the placement of the fielders
+                (i.e. the rest of the players on the bowler's team) as the batsman wants to avoid hitting the ball to them.
+                The placement of the fielders also has individual names for each placement, as these positions have become standardised over the years.
+                These fielding positions are detailed further in the <a class="text-white" href="Bowling.html">Bowling</a> section of this website.</p>
+                <button id="homepageButt" style="color:fuchsia;" onclick="addLater('Batting')">Click to Save for Later!</button>
+            
+            <hr>
+            <p>The image below is a depiction of a traditional cricket pitch. The umpires, who govern the game from either end of the pitch, stand behind the stumps.
+                The stumps are the 3 wickets that stand at the end of the pitch with bails on top. It is a 22 yard strip of specially prepared ground.
+                The horizontal lines on either end of the pitch are called the "creases". These creases are used to monitor many of the rules 
+                of cricket. Some of these rules include:
+            </p>
+            
+        </div>
+
+        <br>
+        <hr>
+        
+        <!--Table for the rules surrounding the crease-->
+        <table class="table table-striped table-bordered table-hover table-condensed">
+            <tr>
+                <th>Rule</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>No Ball</td>
+                <td>The bowler steps completely over the front crease when bowling the ball</td>
+            </tr>
+            <tr>
+                <td>Wide Ball</td>
+                <td>When the bowler bowls outside of the vertical lines on the sides of the crease, causing an unfair chance for the batsman to hit the ball</td>
+            </tr>
+            <tr>
+                <td>Run Out</td>
+                <td>An outfield player removes the bails of the stumps when the batsman is standing outside of the crease and attempting to take a run</td>
+                </td>
+            </tr>
+            <tr>
+                <td>Stumped</td>
+                <td>The wicketkeeper (player standing behind the stumps towards which the bowler is bowling) 
+                    removes the bails of the stumps when the batsman is standing outside of the crease and NOT attempt to take a run</td>
+                </tr>
+        </table>
+
+            <br>
+            <hr>
+
+        <figure>
+            <img src="../Images/cricket-pitch.jpg" alt="Fielding" width=65%>
+            <figcaption>An image of a cricket pitch</figcaption>
+        </figure>
+
+        <form>
+            <label for="myCheck" class="likes">If you enjoyed this page, please leave a LIKE:</label> 
+            <input type="checkbox" id="myCheck" onclick="likeBox()">
+            <hr>
+            <p id="text" style="display:none"> THANK YOU for liking this page! We value your feedback and will continue to ensure you have a great experience on this site!</p>
+    
+        </form>
+    </div>
+
+    <br>
+   
+    <br>
+    <hr>
+    <hr>
+
+    <!--Inserting the footer-->
+    <div class="footer">
+        <p class="footer-right">
+            Find more info on batting; 
+            <a href="https://en.wikipedia.org/wiki/Batting_(cricket)">Wikipedia</a>
+        </p>
+
+        <p class="footer-left">
+            <a href="../index.html">theCrickipedia</a>
+        </p>
+    </div>
+
+</body>
+
+</html>
