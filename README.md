@@ -1,7 +1,7 @@
 # Capstone_Project_level1
 
 ## Description:
-A comprehensive personal CV/resume for Matthew Corin created using HTML and CSS.
+A website that explains the game of cricket, particularly referencing how to play the sport and its rules. Visual aids are used to indicate how the sport is played and what the players do during the course of a match.
 
 ## Table of Content
 1. Installation
